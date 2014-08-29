@@ -44,5 +44,7 @@ fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
 echo "ro.liquid.device=$LIQUID_DEVICE"
+echo "ro.ril.fast.dormancy.rule=0"
+echo "ro.fast.dormancy=0" 
 
 echo "# end build properties"
