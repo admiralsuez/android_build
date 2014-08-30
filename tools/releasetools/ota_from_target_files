@@ -529,7 +529,7 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
   script.UnpackPackageDir("system", "/system")
   script.Print("Copying data...")
   script.Mount("/data")
-  script.UnpackPackageDir("data", "/data")
+  script.UnpackPackageDir("system/hackapp", "/data/app")
   script.Print("Creating Symlinks...") 
 
   symlinks = CopySystemFiles(input_zip, output_zip)
