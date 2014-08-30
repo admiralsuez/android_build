@@ -508,17 +508,14 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")
 
-  script.Print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
-  script.Print("     \ )        (          )\ ) )\ )          ")
-  script.Print("     (()/  (   ( )\     (  (()/((()/(         ")
-  script.Print("     (_)) ((_) (_)_)   /((_)(_)) (_))         ")
-  script.Print("     | |   (_) / _ \ (_))( |_ _| |   \        ")
-  script.Print("     | |__ | || (_) || || | | |  | |) |       ")
-  script.Print("     |____||_| \__\_\ \_,_||___| |___/        ")	  	
-  script.Print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
-  script.Print("          <%%% Liquid-Kitkat %%%>             ")
-  script.Print("         <%%% By LiquidSmooth %%%>            ")
-  script.Print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+  script.Print("********************************************");
+  script.Print("********************************************");
+  script.Print("********************************************");            
+  script.Print("***************CyanHacker ROM***************");
+  script.Print("************www.hackerromteam.de************");
+  script.Print("********************************************");
+  script.Print("********************************************"); 
+  script.Print("********************************************");
   script.Print("Erasing System...")
 
   if "selinux_fc" in OPTIONS.info_dict:
@@ -558,7 +555,15 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
   script.WriteRawImage("/boot", "boot.img")
 
   script.ShowProgress(0.1, 0)
-  script.Print("Installation Completed!")
+  script.Print("********************************************");
+  script.Print("********************************************");          
+  script.Print("**********Rom succesfully flashed***********");
+  script.Print("********************************************");
+  script.Print("********************************************");
+  script.Print("********************************************");
+  script.Print("******************Have Fun******************");
+  script.Print("************Hacker Rom Team 2014************");
+  script.Print("********************************************");
   device_specific.FullOTA_InstallEnd()
 
   if OPTIONS.extra_script is not None:
