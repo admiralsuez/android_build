@@ -527,6 +527,9 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
   script.ShowProgress(0.5, 40)
   script.Print("Installing System...")
   script.UnpackPackageDir("system", "/system")
+  script.Print("Copying data...")
+  script.Mount("/data")
+  script.UnpackPackageDir("data", "/data")
   script.Print("Creating Symlinks...") 
 
   symlinks = CopySystemFiles(input_zip, output_zip)
