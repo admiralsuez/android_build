@@ -210,7 +210,7 @@ class EdifyGenerator(object):
 
   def DeletePath(self):
 	"""delete a whole directory"""
-	self.script.append('delete_recursive("%s");')
+	self.script.append('delete_recursive("%s/%s");' % (part, path))
 	
   def RenameFile(self, srcfile, tgtfile):
     """Moves a file from one location to another."""
