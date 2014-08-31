@@ -208,7 +208,7 @@ class EdifyGenerator(object):
     cmd = "delete(" + ",\0".join(['"%s"' % (i,) for i in file_list]) + ");"
     self.script.append(self._WordWrap(cmd))
 
-  def DeletePath(self);
+  def DeletePath(self):
 	"""delete a whole directory"""
 	self.script.append('delete_recursive("%s");')
 	
