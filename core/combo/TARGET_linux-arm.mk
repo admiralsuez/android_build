@@ -282,7 +282,7 @@ endif
 # More flags/options can be added here
 ifeq ($(USE_ARCH_OPTIMIZATIONS),true)
 TARGET_RELEASE_CFLAGS += \
-                        -O3 \
+                        -O3
                         -DNDEBUG \
                         -g \
                         -fgcse-after-reload \
